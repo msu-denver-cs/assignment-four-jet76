@@ -18,5 +18,6 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
+  get '/', :to => redirect('/index.html') # Route root to SPA https://www.quora.com/How-can-you-set-a-static-page-lying-in-the-public-folder-of-the-app-as-the-root-page-which-is-seen-when-3000-is-accessed
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
